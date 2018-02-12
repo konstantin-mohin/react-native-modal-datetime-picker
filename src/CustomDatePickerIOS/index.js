@@ -85,7 +85,7 @@ export default class CustomDatePickerIOS extends PureComponent {
 
   _handleUserTouchInit = () => {
     // custom date picker shouldn't change this param
-    if(!customDatePickerIOS){
+    if(!this.props.customDatePickerIOS){
       this.setState({
         userIsInteractingWithPicker: true,
       })
